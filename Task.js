@@ -47,7 +47,7 @@ console.log("6th color:",Colors[5]);
 
 let Subjects= ["Maths","Science","English","History","Computer"];
 let index=prompt("Enter the index(0 to 4):");
-console.log(Subjects[index])
+console.log("Subject:",Subjects[index])
 
 // task 6
 
@@ -90,4 +90,4 @@ Fruits={
 console.log(Fruits.Berries[1])
 console.log(Fruits.Tropical[0])
 console.log(Fruits.Citrus[1])
-console.log("Total Categories:",3);
+console.log("Total Categories: " + Object.keys(Fruits).length);
