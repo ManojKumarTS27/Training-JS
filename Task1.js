@@ -1,4 +1,4 @@
-// task 1
+// 1
  var Name1="Naveen";
 var age=22;
 var City= "Bangalore";
@@ -7,14 +7,14 @@ console.log("My Name is "+Name1+".");
 console.log("I am " +age+" years old.");
 console.log("I am from " +City+".");
 
-// task 2
+// 2
 name2=prompt("What is your name?");
 
 alert("Welcome");
 
 confirm("Do you  want to learn JavaScript?");
 
-// task 3
+// 3
 
  let num=100;
  let str="World";
@@ -28,7 +28,7 @@ confirm("Do you  want to learn JavaScript?");
  console.log("Value: "+a,"| Type:",typeof(a));
  console.log("Value: "+b,"| Type:",typeof(b));
 
-// task 4
+// 4
 
 let Colors=["blue","yellow","red","green","white","black"];
 
@@ -43,13 +43,13 @@ console.log("4th color:",Colors[3]);
 console.log("5th color:",Colors[4]);
 console.log("6th color:",Colors[5]);
 
-// task 5
+// 5
 
 let Subjects= ["Maths","Science","English","History","Computer"];
 let index=prompt("Enter the index(0 to 4):");
 console.log("Subject:",Subjects[index])
 
-// task 6
+// 6
 
 let Students={
 Name3:"Surya",
@@ -62,7 +62,7 @@ console.log("Student Name: "+Students.Name3);
 console.log("Second Skill: "+Students.Skills[1]);
 console.log("Course Name: "+Students.Course)
 
-// task 7
+//  7
 
 Product={
     Name5:"Laptop",
@@ -79,7 +79,7 @@ else{
     console.log("Out of Stock")
 }
 
-// task 8
+//  8
 
 Fruits={
     Tropical:["Mango","Pineapple"],

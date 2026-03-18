@@ -251,19 +251,145 @@ b++;
 
 // 4)
 let s=1;
-let sum=0;
+let sum1=0;
 while(s<=10){
-    sum=sum+s;
+    sum1=sum1+s;
     s++;
 }
-console.log(sum)
+console.log(sum1)
 
 console.clear()
 
 // 5)
-let c=1;
-while(c<=5){
-    console.log(c*c)
-c++;
+let C=1;
+while(C<=5){
+    console.log(C*C)
+C++;
 }
 
+
+// Section-6 Do While
+// 1)
+let i1=1;
+do{
+    console.log(i1);
+i1++
+}while(i1<=5)
+
+// 2)
+let a1=5;
+do{
+    console.log(a1)
+a1--;
+}while(a1>=1)
+    console.clear()
+
+// 3)
+let b1=3;
+do{
+    console.log(b1)
+    b1=b1+3;
+}
+while(b1<=30)
+
+// 4)
+let c=1;
+do{
+    if(c%4==0){
+        console.log(c);
+    }
+    c++;
+}while(c<=20);
+
+// 5)
+let m=1;
+do{
+    console.log(m);
+    m++;
+}while(m<=10);
+console.clear()
+
+
+// Section-7  For Of
+
+// 1)
+let text="Javascript";
+for(let i of text){
+    console.log(i)
+} 
+
+// 2)
+let fruits=["apple","banana","orange"]
+for(let a of fruits){
+}console.log(a)
+
+// 3)
+let A="Javascript";
+let count= 0;
+for(let ch of A){
+    count++;
+}
+console.log(count)
+
+// 4)
+let word="Javascript";
+for(let ch of word){
+    if(ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u"){
+        console.log(ch)
+    }
+}
+
+// 5)
+let numbers=[10,20,30];
+let sum=0;
+for(let n of numbers){
+    sum=sum+n;
+}console.log(sum)
+
+
+// Section-8 For In(Object)
+// 1)
+let Student={
+    name:"sathish",
+    age: "22",
+    department:"ECE"
+};
+for(let key in Student){
+    console.log(Student[key])
+}
+
+// 2)
+let student={
+    name:"siva",
+    age: "21",
+    department:"IT"
+};
+for(let key1 in student){
+    console.log(key1)
+}
+
+// 3)
+let Student1={
+    name:"sathish",
+    age: "22",
+    department:"ECE"
+};
+for(let key2 in Student1){
+    console.log(key2+" : "+Student1[key2])
+}
+
+
+// Section-9 Functions
+// 1)
+function add(a,b){
+    return a+b;
+}
+let x = add(5,3);
+console.log(x)
+
+// 2)
+function square(num){
+    return num*num;
+}
+let result = square(5);
+// console.log(result)
