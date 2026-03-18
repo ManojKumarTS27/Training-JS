@@ -115,7 +115,7 @@ function updateCart() {
         let li = document.createElement('li');
         li.innerHTML = `
             ${item.title.substring(0,20)} (x${item.qty}) - ₹${item.price}
-            <button onclick="removeItem(${item.id})">❌</button>
+            <button onclick="removeItem(${item.id})">Remove</button>
         `;
         cartItems.appendChild(li);
     });
@@ -129,3 +129,21 @@ function removeItem(id) {
 
 
 }
+const cartBtn = document.getElementById('cartBtn');
+const cartDiv = document.querySelector('.cart');
+
+// Open cart
+cartBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    cartDiv.classList.add('active');
+});
+
+// Prevent closing when clicking inside cart
+cartDiv.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
+// Close when clicking outside
+document.addEventListener('click', () => {
+    cartDiv.classList.remove('active');
+});
