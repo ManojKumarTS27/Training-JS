@@ -132,18 +132,18 @@ function removeItem(id) {
 const cartBtn = document.getElementById('cartBtn');
 const cartDiv = document.querySelector('.cart');
 
-// Open cart
+
 cartBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     cartDiv.classList.add('active');
 });
 
-// Prevent closing when clicking inside cart
+
 cartDiv.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-// Close when clicking outside
+
 document.addEventListener('click', () => {
     cartDiv.classList.remove('active');
 });
